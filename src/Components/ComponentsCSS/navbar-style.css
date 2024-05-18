@@ -117,7 +117,7 @@ button:hover{
     display: none;
   }
 
-  @media screen and (max-width: 1150px){
+  @media screen and (max-width: 1050px){
     .NavbarItems{
         z-index: 99;
     }
@@ -130,7 +130,7 @@ button:hover{
         width: 100%;
         height: auto;
         position: absolute;
-        top: 20px;
+        top: 80px;
         left: -100%;
         opacity: 0;
         align-items: stretch;
