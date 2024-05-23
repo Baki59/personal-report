@@ -3,6 +3,7 @@ import logo from "../assets/personal-report-logo.png"
 import { MenuItems } from "./MenuItems";
 import { RiMenuFold4Fill } from "react-icons/ri";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 
 const Navbar = () => {
@@ -11,7 +12,7 @@ const Navbar = () => {
         setState(!state)
     }
     
-
+ 
     return(
         <nav className="navbar-items">
             <RiMenuFold4Fill className="menu-icons" onClick={handleClick}/>
@@ -21,13 +22,14 @@ const Navbar = () => {
                 <div className="navbar-title">Daily Report</div>
             </div>
             {/* logo part */}
+            
 
             {/* Menu Part */}
                 <ul  className={state ? "nav-menu-active" : "nav-menu"}>
                     {MenuItems.map((item,index) =>{
                         return(
                             <li key={index} >
-                                <a href="#" className={item.cName}>{item.title}</a>
+                                <Link className={item.cName} to={item.url}>{item.title}</Link>
                             </li>
                         )
                     })}
