@@ -11,7 +11,7 @@
     //border-width: 2px;
 }
 .home-middle-quranic-verse{
-    margin-left: 30%;
+    margin-left: 20%;
 }
 .login_page_ayat_meaning{
     width: 70%;
@@ -32,7 +32,9 @@
 }
 .login-form-left-part{
     display: flex;
-    align-items: flex-start;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 70px;
     width: 820px;
     height: 509px;
     background-color: white;
@@ -42,15 +44,24 @@
 .login-form-left-part form{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    align-self: center;
-    margin-left: 20%;
+    width: 400px;
+    //margin-left: 20%;
 }
-.login-form-left-part form label{
+/* .login-form-left-part form label{
     display: flex;
     flex-direction: column;
+} */
+.login-form-left-part form input{
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: black
 }
-.login-form-left-part form submit{
+.login-form-left-part form input:focus{
+    //border-color: green;
+    outline: none;
+    border-width: 0 0 2px;
+}
+/* .login-form-left-part form submit{
     cursor: pointer;
     background-color: #12B48D;
     padding: 10px;
@@ -58,7 +69,36 @@
     font-size: 20px;
     font-weight: 500;
     color: white;
+} */
+.login-form-left-part-under-form{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    gap: 100px;
 }
+
+.login-form-left-part submit{
+    cursor: pointer;
+    background-color: #12B48D;
+    padding: 2px;
+    width: 191px;
+    align-items: center;
+    height: 37px;
+    margin-top: 55px;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    //vertical-align: middle;
+}
+.login-form-left-part-bottom-part{
+    margin-top: 40px;
+}
+.login-form-left-part-bottom-part span{
+    color: #12B48D;
+    cursor: pointer;
+}
+
 .login-form-right-part{
     display: flex;
     //align-items: flex-end;
@@ -78,4 +118,88 @@
     height: 190px;
     align-self: center;
     margin-left: 5%;
+}
+
+@media screen and (max-width: 1200px){
+    
+}
+@media screen and (max-width: 1024px){
+    .login-form{
+        width: 612px;
+        height: 409px;
+    }
+    .login-form-left-part{
+        //padding-top: 70px;
+        width: 620px;
+        height: 409px;
+    }
+    .login-form-left-part form{
+        width: 300px;
+        //margin-left: 20%;
+    }
+    .login-form-left-part-under-form{
+        gap: 20px;
+        font-size: 10px;
+    }
+
+}
+@media screen and (max-width: 768px){
+    .login-form{
+        width: 412px;
+        height: 350px;
+    }
+    .login-form-left-part{
+        //padding-top: 70px;
+        width: 420px;
+        height: 350px;
+    }
+    .login-form-left-part form{
+        width: 200px;
+        //margin-left: 20%;
+    }
+    .login-form-left-part-under-form{
+        gap: 20px;
+    }
+    .login-form-right-part img{
+        width: 152px;
+        height: 150px;
+    }
+    .login-form-left-part submit{
+        width: 101px;
+    }
+
+}
+@media screen and (max-width: 450px){
+    .login_page_ayat_meaning{
+        width: 90%;
+    }
+    .login_page_ayat{
+        width: 90%;
+    }
+    .login-form{
+        //flex-direction: column;
+        width: 280px;
+        height: 350px;
+    }
+    .login-form-left-part{
+        //padding-top: 70px;
+        width: 290px;
+        height: 350px;
+        border-top-right-radius: 17px;
+        border-bottom-right-radius: 17px;
+    }
+    .login-form-left-part form{
+        width: 190px;
+        //margin-left: 20%;
+    }
+    .login-form-left-part-under-form{
+        gap: 10px;
+    }
+    .login-form-right-part{
+        display: none;
+    }
+    .login-form-left-part submit{
+        width: 101px;
+    }
+
 }

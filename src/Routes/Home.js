@@ -13,42 +13,39 @@ const Home = () => {
         <Navbar/>
         <div className='home-middle'>
           <div className='home-middle-quranic-verse'>
-              <img src={login_page_ayat} className='login_page_ayat'/>
-              <img src={login_page_ayat_meaning} className='login_page_ayat_meaning'/>
+              <img src={login_page_ayat} className='login_page_ayat' alt='ayat'/>
+              <img src={login_page_ayat_meaning} className='login_page_ayat_meaning' alt='ayat-meaning'/>
           </div>
           
           <div className='login-form'>
             <div className='login-form-left-part'>
               <form >
-                <label>UserName/Email:
+                {/* <label>UserName/Email: */}
                 <input 
                   placeholder='Username/Email'
                   type="email" 
                   name="username"
                 />
-                </label>
-                <label>Password:
+                {/* </label> */}
+                {/* <label>Password: */}
                   <input 
                     placeholder='Password'
                     type="password" 
                     name="Password" 
                   />
-                  </label>
-                  <div>
-                    <span><Checkbox/>Remember Password?</span>
-                    <span>Forgot Password?</span>
-                  </div>
-                  <submit type="submit">LOGIN</submit>
-                  <div>
+                  {/* </label> */}
+              </form>
+              <div className='login-form-left-part-under-form'>
+                <span1><Checkbox/>Remember Password</span1>
+                <span2>Forgot Password?</span2>
+              </div>
+              <submit type="submit">LOGIN</submit>
+              <div className='login-form-left-part-bottom-part'>
                 New User? <span>Create an Account</span>
               </div>
-              </form>
-
-              
-
             </div>
             <div className='login-form-right-part'>
-              <img src={logo}/>
+              <img src={logo} alt='login-logo'/>
 
             </div>
 

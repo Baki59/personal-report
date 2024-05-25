@@ -106,7 +106,20 @@ button:hover{
   display: none;
 }
 
-  @media screen and (max-width: 850px){
+@media screen and (max-width: 1250px){
+  .navbar-logo-and-title{
+    left: 2%;
+  }
+  .navbar-logo{
+    width: 10%;
+    //left: 5%;
+  }
+  .navbar-title{
+    font-size: 20px;
+  }
+}
+
+  @media screen and (max-width: 950px){
     .navbar-items{
         z-index: 99;
     }
@@ -209,5 +222,18 @@ button:hover{
     
   }
   @media screen and (max-width: 576px){
+    .nav-links{
+      font-size: 1rem;
+      font-weight: 600;
+      padding: 0.5rem 0.7rem;
+    }
+    .nav-links-mobile{
+      padding: 0.8rem;
+      width: 200px;
+      height: 50px;
+      font-size: 1.1rem;
+      font-weight: 400;
+
+  }
     
   }
