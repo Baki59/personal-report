@@ -72,6 +72,7 @@ button:hover{
   position: relative;
   right: 10px;
   color:  white;
+  z-index: 99;
 }
 .navbar-logo-and-title{
   position: relative;

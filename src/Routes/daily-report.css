@@ -1,0 +1,40 @@
+.daily-report-middle-part{
+    margin-top: 100px;
+    width: 70%;
+    height: auto;
+    /* display: flex;
+    flex-direction: column; */
+    gap: 15px;
+}
+.daily-report-middle-part-1st-row{
+    display: flex;
+    flex-direction: row;
+    margin-left: 40%;
+}
+.daily-report-middle-part-1st-row div1{
+    color: white;
+}
+.daily-report-middle-part-2nd-row{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30%;
+    gap: 10px;
+}
+.daily-report-middle-part-2nd-row-row {
+    color: white;
+    //gap: 5px;
+}
+.daily-report-middle-part-2nd-row-row hr{
+    color: white;
+    //width: 920px;
+    align-self: center;
+}
+.daily-report-middle-part-2nd-row div21{
+    color: white;   
+    margin-right: 20px; 
+}
+.daily-report-middle-part-2nd-row div21 input{
+    width: 10%;   
+    margin-left: 5px;
+    color: black;
+}
