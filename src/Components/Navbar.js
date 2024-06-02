@@ -3,8 +3,9 @@ import logo from "../assets/personal-report-logo.png"
 import { NavbarItems } from "./NavbarItems";
 import { RiMenuFold4Fill } from "react-icons/ri";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Menu, MenuButton, MenuItem, MenuItems, Transition } from '@headlessui/react'
+import Signup from "../Routes/Signup";
 // import {
 //     ArchiveBoxXMarkIcon,
 //     ChevronDownIcon,
@@ -18,6 +19,11 @@ const Navbar = () => {
     const [state, setState] = useState(false);
     const handleClick = () =>{
         setState(!state)
+    }
+    let navigate = useNavigate(); 
+    const routeChange = () =>{ 
+        let path = `./signup`; 
+        navigate(path);
     }
     
  
@@ -42,7 +48,7 @@ const Navbar = () => {
                         )
                     })}
                     
-                    <button>Sign Up</button>
+                    <button onClick={routeChange}>Sign Up</button>
                 </ul>
 
                 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"></link>

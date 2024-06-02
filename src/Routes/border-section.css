@@ -1,17 +1,19 @@
 .mainContainer {
     display: flex;
     flex-direction: column;
-    max-width: 100%;
+    //max-width: 100%;
+    width: 100%;
     border-color: white;
-    border-left: 1px solid $border-color;
-    border-bottom: 1px solid $border-color;
-    border-right: 1px solid $border-color;
+    border-left: 1px solid white;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
     border-radius: 5px;
-    margin: 1em;
+    //margin: 1em;
+    margin-top: 10px;
 }
 
 .childrenContainer {
-    padding: 1em;
+    padding: 0.5em;
 }
 
 .header {
@@ -21,9 +23,9 @@
 }
 
 .headerBorderBefore {
-            border-top: 1px solid $border-color;
-            width: 1em;
-            border-top-left-radius: 5px;
+    border-top: 1px solid white;
+    width: 1em;
+    border-top-left-radius: 5px;
 }
 
 .headerTitle {
@@ -39,11 +41,18 @@
     text-overflow: ellipsis;
     font-size: 1em;
     font-weight: 600;
+    color: white;
 }
 
 .headerBorderAfter {
-    border-top: 1px solid $border-color;
+    border-top: 1px solid white;
     width: 1em;
     flex-grow: 2;
     border-top-right-radius: 5px;
+}
+
+@media screen and (max-width: 360px){
+    .mainContainer {
+        width: 115%;
+    }
 }

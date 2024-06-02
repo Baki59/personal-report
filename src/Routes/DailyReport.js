@@ -4,16 +4,16 @@ import MyFooter from '../Components/MyFooter'
 import './daily-report.css'
 import Dropdown from 'react-dropdown';
 import 'react-dropdown/style.css';
-import Select from "react-select";
+// import Select from "react-select";
 import {Container,Row,Col} from 'react-bootstrap';
-import Box from "@mui/material/Box";
+// import Box from "@mui/material/Box";
 import BorderedSection from './BorderSection';
 
 
 
 const DailyReport = () => {
-  const [date,setDate] = useState(null);
-  const [month,setMonth] = useState(null);
+  // const [date,setDate] = useState(null);
+  // const [month,setMonth] = useState(null);
 
   const Day = [
     '1', '2', '3','4', '5', '6','7', '8', '9','10', '11', '12','13', '14', '15','16', '17', '18','19', '20', '21','22', '23', '24','25', '26', '27','28', '29', '30','31'
@@ -21,15 +21,15 @@ const DailyReport = () => {
   const Month = [
     'Januray','February','March','April','May','June','July','August','September','October','November','December'
   ];
-  const defaultDay = Day[0];
-  const defaultMonth = Month[0];
+  // const defaultDay = Day[0];
+  // const defaultMonth = Month[0];
 
-  const handleDateChange = (obj) => {
-    setDate(obj);
-  };
-  const handleMonthChange = (obj) => {
-    setMonth(obj);
-  };
+  // const handleDateChange = (obj) => {
+  //   setDate(obj);
+  // };
+  // const handleMonthChange = (obj) => {
+  //   setMonth(obj);
+  // };
 
   return (
     <div>
@@ -210,11 +210,62 @@ const DailyReport = () => {
               <Col xs={3}></Col>
             </Row>
 
-            <BorderedSection title="Title only">
-                <div>a first child with quite a long text</div>
-                <div>a second child</div>
+            <BorderedSection title="Meet Up">
+              <Row className='daily-report-middle-part-2nd-row-row'>
+                <Col>Dawah Targeted</Col>
+                <Col><input type='number'/></Col>
+                <Col>Workers</Col>
+                <Col><input type='number'/></Col>
+                <Col>Ruqon</Col>
+                <Col><input type='number'/></Col>
+              </Row>
             </BorderedSection>
+            <Row className='daily-report-middle-part-2nd-row-row'>
+            </Row>
+            <Row className='daily-report-middle-part-2nd-row-row'>
+                <Col >Org. Time(Hours)</Col>
+                <Col ><input type='number'/></Col>
+                <Col></Col>
+                <Col></Col>
+                <Col></Col>
+                <Col></Col>
+                <Col></Col>
+            </Row>
+
+            <Row className='daily-report-middle-part-2nd-row-row'>
+                <Col>Miscellaneous</Col><hr/>
+            </Row>
+
+            <Row className='daily-report-middle-part-2nd-row-row'>
+                <Col>Self Criticism</Col>
+                <Col><input type='number'/></Col>
+                <Col>Family Meeting</Col>
+                <Col><input type='number'/></Col>
+                <Col>Social Work</Col>
+                <Col><input type='number' placeholder='Number'/></Col>
+                
+            </Row>
+
+            <Row className='daily-report-middle-part-2nd-row-row'>
+                <Col>Visit</Col>
+                <Col><input type='number' placeholder='Number'/></Col>
+                <Col>Giving Debt.</Col>
+                <Col><input type='number'/></Col>
+                <Col>Report Keeping</Col>
+                <Col><input type='number'/></Col>
+                
+            </Row>
+
+            <Row className='daily-report-middle-part-2nd-row-row'>
+                <Col >Comment</Col>
+                <Col ><textarea type='text'/></Col>
+                <Col></Col>
+                <Col></Col>
+                <Col></Col>
+            </Row>
           </Container>
+
+          <div className='daily-report-save'>Save</div>
           
 
         </div>

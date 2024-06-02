@@ -10,6 +10,7 @@
     display: flex;
     flex-direction: row;
     margin-left: 40%;
+    gap: 20px;
 }
 .daily-report-middle-part-1st-row div1{
     color: white;
@@ -17,7 +18,7 @@
 .daily-report-middle-part-2nd-row{
     display: flex;
     flex-direction: column;
-    margin-left: 30%;
+    margin-left: 25%;
     gap: 10px;
 }
 .daily-report-middle-part-2nd-row-row {
@@ -37,4 +38,25 @@
     width: 10%;   
     margin-left: 5px;
     color: black;
+}
+.daily-report-save{
+    margin-left: 70%;
+    background-color: #00FFC2;
+    width: 100px;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 30px;
+    font-weight: 500;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 450px){
+    .daily-report-middle-part-1st-row{
+        margin-left: 20%;
+    }
+    .daily-report-save{
+        margin-left: 50%;
+    }
 }
