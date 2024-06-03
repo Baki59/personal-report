@@ -1,0 +1,101 @@
+.monthly-plan-middle-part{
+    margin-top: 100px;
+    width: 80%;
+    height: auto;
+    /* display: flex;
+    flex-direction: column; */
+    gap: 15px;
+    //margin-left: 30%;
+}
+.monthly-plan-middle-part-1st-row{
+    display: flex;
+    flex-direction: row;
+    margin-left: 40%;
+    gap: 10px;
+    color: white;
+    align-items: center;
+}
+.monthly-plan-middle-part-1st-row div2{
+    gap: 10px;
+}
+.monthly-plan-middle-part-1st-row input{
+    width: 50px;
+    border-width: 1px;
+    text-align: center;
+    padding: 5px;
+}
+.monthly-plan-data-part{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-left: 25%;
+}
+.monthly-plan-data-part-1st-row{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    padding: 5px;
+}
+.monthly-plan-data-part-topic{
+    width: 25%;
+    height: 40px;
+    background-color: #65FFBE;
+    margin-right: 25px;
+    font-weight: 500;
+    padding: 10px;
+    text-align: center;
+}
+.monthly-plan-data-part-literature{
+    width: 25%;
+    height: 40px;
+    background-color: #65FFBE;
+    margin-right: 15px;
+    font-weight: 500;
+    padding: 10px;
+    text-align: center;
+}
+.monthly-plan-data-part-days{
+    color: white;
+    margin-right: 10px;
+    text-align: center;
+    padding: 10px;
+    align-items: flex-end;
+
+}
+.monthly-plan-data-part-Number{
+    width: 50px;
+    border-width: 1px;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-right: 20px;
+    align-items: flex-start;
+}
+.monthly-plan-middle-part-bottom-row{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.monthly-plan-middle-part-add-new{
+    background-color: #65FFBE;
+    width: 40%;
+    align-items: center;
+    height: 40px;
+    text-align: center;
+    padding: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.monthly-plan-change-saved{
+    margin-left: 40%;
+    background-color: #00FFC2;
+    width: 10%;
+    padding: 10px;
+    text-align: center;
+    margin-top: 40px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 500;
+}

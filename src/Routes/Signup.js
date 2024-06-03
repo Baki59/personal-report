@@ -3,6 +3,7 @@ import logo from '../assets/personal-report-logo.png'
 import { Checkbox } from 'flowbite-react';
 import Navbar from '../Components/Navbar';
 import MyFooter from '../Components/MyFooter';
+import './signup.css'
 
 const Signup = () => {
   return (
@@ -12,11 +13,30 @@ const Signup = () => {
         <div className='signup-form-left-part'>
             <form >
             {/* <label>UserName/Email: */}
+            <div className='signup-form-left-part-1st-row'>
+                <input 
+                    placeholder='First Name'
+                    type="text" 
+                    name="firstname"
+                />
+                <input 
+                    placeholder='Last Name'
+                    type="text" 
+                    name="lastname"
+                />
+
+            </div>
             <input 
-                placeholder='Username/Email'
+                placeholder='Email'
                 type="email" 
                 name="username"
             />
+            <input 
+                placeholder='Phone'
+                type="number" 
+                name="phone"
+            />
+            
             {/* </label> */}
             {/* <label>Password: */}
                 <input 
@@ -24,16 +44,15 @@ const Signup = () => {
                 type="password" 
                 name="Password" 
                 />
+                <input 
+                placeholder='Confirm Password'
+                type="password" 
+                name="Password" 
+                />
                 {/* </label> */}
             </form>
-            <div className='signup-form-left-part-under-form'>
-            <span1><Checkbox/>Remember Password</span1>
-            <span2>Forgot Password?</span2>
-            </div>
-            <submit type="submit">LOGIN</submit>
-            <div className='signup-form-left-part-bottom-part'>
-            New User? <span>Create an Account</span>
-            </div>
+            
+            <submit type="submit">SIGN UP</submit>
         </div>
         <div className='signup-form-right-part'>
             <img src={logo} alt='signup-logo'/>

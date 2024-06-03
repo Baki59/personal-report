@@ -22,7 +22,7 @@ const Navbar = () => {
     }
     let navigate = useNavigate(); 
     const routeChange = () =>{ 
-        let path = `./signup`; 
+        let path = `../signup`; 
         navigate(path);
     }
     
