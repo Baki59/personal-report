@@ -6,8 +6,14 @@ import login_page_ayat_meaning from '../assets/login_page_ayat_meaning.png'
 import './home.css';
 import logo from '../assets/personal-report-logo.png'
 import { Checkbox } from 'flowbite-react';
+import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
+  let navigate = useNavigate(); 
+    const routeChange = () =>{ 
+        let path = `../signup`; 
+        navigate(path);
+    }
   return (
     <div>
         <Navbar/>
@@ -41,7 +47,7 @@ const Home = () => {
               </div>
               <submit type="submit">LOGIN</submit>
               <div className='login-form-left-part-bottom-part'>
-                New User? <span>Create an Account</span>
+                New User? <span onClick={routeChange}>Create an Account</span>
               </div>
             </div>
             <div className='login-form-right-part'>

@@ -25,13 +25,17 @@ const Navbar = () => {
         let path = `../signup`; 
         navigate(path);
     }
+    const gotoHome = () =>{ 
+        let path = `../`; 
+        navigate(path);
+    }
     
  
     return(
         <nav className="navbar-items">
             <RiMenuFold4Fill className="menu-icons" onClick={handleClick}/>
             {/* logo part */}
-            <div className="navbar-logo-and-title">
+            <div className="navbar-logo-and-title" onClick={gotoHome}>
                 <img src={logo} alt="Logo" className="navbar-logo"/> 
                 <div className="navbar-title">Daily Report</div>
             </div>

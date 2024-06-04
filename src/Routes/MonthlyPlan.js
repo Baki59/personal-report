@@ -19,7 +19,7 @@ const MonthlyPlan = () => {
         <Navbar/>
         <div className='monthly-plan-middle-part'>
           <div className='monthly-plan-middle-part-1st-row'>
-            <div1>Personal Report</div1>
+            <div1>Monthly Plan</div1>
             <Dropdown options={Month}  placeholder="Month" />
             <Dropdown options={Year}  placeholder="Year" />
             <div2>Total Days 
@@ -147,6 +147,48 @@ const MonthlyPlan = () => {
                 Org. Time(Hours)
               </div>
               <input className='monthly-plan-data-part-Number' type='number'/>
+            </div>
+
+            <div className='monthly-plan-data-part-1st-row'>
+              <div className='monthly-plan-data-part-miss'>
+                Miscellaneous
+              </div>
+
+              <div className='monthly-plan-data-part-miss-1st-column'>
+                <div className='monthly-plan-data-part-miss-1st-column-1st-row'>
+                  <div1>Self Analysis</div1>
+                  <input></input>
+                </div>
+                <div className='monthly-plan-data-part-miss-1st-column-2nd-row'>
+                  <div1>Social Work</div1>
+                  <input></input>
+                </div>
+                <div className='monthly-plan-data-part-miss-1st-column-3rd-row'>
+                  <div1>Giving Loan</div1>
+                  <input></input>
+                </div>
+              </div>
+
+              <div className='monthly-plan-data-part-miss-2nd-column'>
+                <div className='monthly-plan-data-part-miss-2nd-column-1st-row'>
+                  <div1>Family Meeting</div1>
+                  <input></input>
+                </div>
+                <div className='monthly-plan-data-part-miss-2nd-column-2nd-row'>
+                  <div1>Visit</div1>
+                  <input></input>
+                </div>
+                <div className='monthly-plan-data-part-miss-2nd-column-3rd-row'>
+                  <div1>Report(Days)</div1>
+                  <input></input>
+                </div>
+              </div>
+
+            </div>
+
+            <div className='monthly-plan-data-part-comment'>
+              <div1>Comment</div1>
+              <textarea type='text'/>
             </div>
 
             <div className='monthly-plan-change-saved'>Save</div>
