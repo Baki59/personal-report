@@ -8,6 +8,7 @@ import DownloadForOfflineIcon from '@mui/icons-material/DownloadForOffline';
 import ShareIcon from '@mui/icons-material/Share';
 import NorthIcon from '@mui/icons-material/North';
 import SouthIcon from '@mui/icons-material/South';
+import { Col, Container, Row } from 'react-bootstrap';
 
 const ReportSummary = () => {
   const Year = [
@@ -26,186 +27,330 @@ const ReportSummary = () => {
             <Dropdown options={Year}  placeholder="Year" />
             <div2>Total Days 
             </div2>
-              <input type='number'/>
+              <div21>31</div21>
           </div>
 
-          <div className='report-summary-data-part'>
-            <div className='report-summary-data-part-1st-row'>
-              <div className='report-summary-data-part-topic'>
+          <Container className='report-summary-data-part'>
+            <Row className='report-summary-data-part-1st-row'>
+              <Col className='report-summary-data-part-topic'>
                 Quran Study(Ayahs)
-              </div>
-              <div className='report-summary-data-part-days'>
+              </Col>
+              <Col className='report-summary-data-part-days'>
                 Days
-              </div>
+              </Col>
+              <Col className='report-summary-data-part-Number'>
+                25
+              </Col>
               
-              <input className='report-summary-data-part-Number' type='number'/>
-              <div className='report-summary-data-part-days'>
+              <Col className='report-summary-data-part-days'>
                 Study(Ayahs)
-              </div>
-              <input className='report-summary-data-part-Number' type='number'/>
-              <div className='report-summary-data-part-days'>
+              </Col>
+              <Col className='report-summary-data-part-Number'>
+                500
+              </Col>
+              
+              <Col className='report-summary-data-part-days'>
                 Memorization 
-              </div>
-              <input className='report-summary-data-part-Number' type='number'/>
-              <div className='report-summary-data-part-days'>
+              </Col>
+              <Col className='report-summary-data-part-Number'>
+                10
+              </Col>
+              
+              <Col className='report-summary-data-part-days'>
                 Dars
-              </div>
-              <input className='report-summary-data-part-Number' type='number'/>
-              <NorthIcon/>
-            </div>
+              </Col>
+              <Col  className='report-summary-data-part-Number' >
+                10
+              </Col>
+              <Col className='report-summary-data-part-days'>
+              Quality
+              </Col>
+              <Col >
+                <NorthIcon className='report-summary-upper-arrow'/>
+              </Col>
+              
+            </Row>
 
-            <div className='report-summary-data-part-1st-row'>
-              <div className='report-summary-data-part-topic'>
+            <Row className='report-summary-data-part-1st-row'>
+              <Col className='report-summary-data-part-topic'>
                 Hadith (Numbers)
-              </div>
-              <div className='report-summary-data-part-days'>
+              </Col>
+              <Col className='report-summary-data-part-days'>
                 Days
-              </div>
-              <input className='report-summary-data-part-Number' type='number'/>
-              <div className='report-summary-data-part-days'>
-                Study(Ayahs)
-              </div>
-              <input className='report-summary-data-part-Number' type='number'/>
-              <div className='report-summary-data-part-days'>
+              </Col>
+              <Col className='report-summary-data-part-Number'>
+              30
+              </Col>
+              
+              <Col className='report-summary-data-part-days'>
+                Study(Nums)
+              </Col>
+
+              <Col className='report-summary-data-part-Number'>
+              300
+              </Col>
+              
+              <Col className='report-summary-data-part-days'>
                 Memorization
-              </div>
-              <input className='report-summary-data-part-Number' type='number'/>
-              <div className='report-summary-data-part-days'>
+              </Col>
+              <Col className='report-summary-data-part-Number'>
+              10
+              </Col>
+              
+              <Col className='report-summary-data-part-days'>
                 Dars
-              </div>
-              <input className='report-summary-data-part-Number' type='number'/>
-              <SouthIcon/>
-            </div>
+              </Col>
+              <Col className='report-summary-data-part-Number'>
+              10
+              </Col>
+              
+              <Col className='report-summary-data-part-days'>
+              Quality
+              </Col>
+              <Col  >
+                <SouthIcon className='report-summary-lower-arrow'/>
+              </Col>
+              
+            </Row>
 
-            <div className='report-summary-data-part-1st-row'>
-              <div className='report-summary-data-part-literature'>
+            <Row className='report-summary-data-part-1st-row'>
+              <Col className='report-summary-data-part-literature'>
                 Literature Study(Pages)
-              </div>
-              <div className='report-summary-data-part-days'>
+              </Col>
+              <Col className='report-summary-data-part-days'>
                 Islamic
-              </div>
-              <input className='report-summary-data-part-Number' type='number'/>
-              <div className='report-summary-data-part-days'>
+              </Col>'
+              <Col className='report-summary-data-part-Number'>
+              1000
+              </Col>
+              
+              <Col className='report-summary-data-part-days'>
                 Others
-              </div>
-              <input className='report-summary-data-part-Number' type='number'/>
-              <NorthIcon/>
-            </div>
+              </Col>
+              <Col className='report-summary-data-part-Number'>
+                500
+              </Col>
+              <Col></Col>
+              <Col></Col>
+              <Col></Col>
+              <Col></Col>
+              <Col className='report-summary-data-part-days'>
+              Quality
+              </Col>
+              <Col>
+              <NorthIcon className='report-summary-upper-arrow'/>
+              </Col>
+              
+            </Row>
 
-            <div className='report-summary-data-part-1st-row'>
-              <div className='report-summary-data-part-literature'>
+            <Row className='report-summary-data-part-1st-row'>
+              <Col className='report-summary-data-part-literature'>
                 Namaz(Waqt)
-              </div>
-              <div className='report-summary-data-part-days'>
+              </Col>
+              <Col className='report-summary-data-part-days'>
                 Jamaa'h
-              </div>
-              <input className='report-summary-data-part-Number' type='number'/>
-              <div className='report-summary-data-part-days'>
+              </Col>
+              <Col className='report-summary-data-part-Number'>
+                150
+              </Col>
+              <Col className='report-summary-data-part-days'>
                 Qadha
-              </div>
-              <input className='report-summary-data-part-Number' type='number'/>
-              <SouthIcon/>
-            </div>
+              </Col>
+              <Col className='report-summary-data-part-Number' >
+                2
+              </Col>
+              <Col></Col>
+              <Col></Col>
+              <Col></Col>
+              <Col></Col>
+              <Col className='report-summary-data-part-days'>
+              Quality
+              </Col>
+              <Col>
+              <SouthIcon className='report-summary-lower-arrow'/>
+              </Col>
+              
+            </Row>
 
-            <div className='report-summary-data-part-1st-row'>
-              <div className='report-summary-data-part-literature'>
+            <Row className='report-summary-data-part-1st-row'>
+              <Col className='report-summary-data-part-literature'>
                 Contact (Number)
-              </div>
-              <div className='report-summary-data-part-days'>
+              </Col>
+              <Col className='report-summary-data-part-days'>
                 Workers
-              </div>
-              <input className='report-summary-data-part-Number' type='number'/>
-              <div className='report-summary-data-part-days'>
+              </Col>
+              <Col className='report-summary-data-part-Number'>
+                5
+              </Col>
+              <Col className='report-summary-data-part-days'>
                 Ruqon
-              </div>
-              <input className='report-summary-data-part-Number' type='number'/>
-              <NorthIcon/>
-            </div>
+              </Col>
+              <Col className='report-summary-data-part-Number'>
+                5
+              </Col>
+              <Col></Col>
+              <Col></Col>
+              <Col></Col>
+              <Col></Col>
+              <Col className='report-summary-data-part-days'>
+              Quality
+              </Col>
+              <Col>
+              <NorthIcon className='report-summary-upper-arrow'/>
+              </Col>
+              
+            </Row>
 
-            <div className='report-summary-data-part-1st-row'>
-              <div className='report-summary-data-part-literature'>
+            <Row className='report-summary-data-part-1st-row'>
+              <Col className='report-summary-data-part-literature'>
                 Distribution (Number)
-              </div>
-              <div className='report-summary-data-part-days'>
+              </Col>
+              <Col className='report-summary-data-part-days'>
                 Islamic Book
-              </div>
-              <input className='report-summary-data-part-Number' type='number'/>
-              <div className='report-summary-data-part-days'>
+              </Col>
+              <Col className='report-summary-data-part-Number'>
+                10
+              </Col>
+              <Col className='report-summary-data-part-days'>
                 Others
-              </div>
-              <input className='report-summary-data-part-Number' type='number'/>
-              <SouthIcon/>
-            </div>
+              </Col>
+              <Col className='report-summary-data-part-Number'>
+                10
+              </Col>
+              <Col></Col>
+              <Col></Col>
+              <Col></Col>
+              <Col></Col>
+              <Col className='report-summary-data-part-days'>
+              Quality
+              </Col>
+              <Col>
+              <SouthIcon className='report-summary-lower-arrow'/>
+              </Col>
+              
+            </Row>
 
-            <div className='report-summary-data-part-1st-row'>
-              <div className='report-summary-data-part-literature'>
+            <Row className='report-summary-data-part-1st-row'>
+              <Col className='report-summary-data-part-literature'>
                 Meet Up(Number)
-              </div>
-              <div className='report-summary-data-part-days'>
+              </Col>
+              <Col className='report-summary-data-part-days'>
                 Dawah Targeted
-              </div>
-              <input className='report-summary-data-part-Number' type='number'/>
-              <div className='report-summary-data-part-days'>
+              </Col>
+              <Col className='report-summary-data-part-Number'>
+                5
+              </Col>
+              <Col className='report-summary-data-part-days'>
                 Workers
-              </div>
-              <input className='report-summary-data-part-Number' type='number'/>
-              <div className='report-summary-data-part-days'>
+              </Col>
+              <Col className='report-summary-data-part-Number'>
+                5
+              </Col>
+              <Col className='report-summary-data-part-days'>
                 Ruqon
-              </div>
-              <input className='report-summary-data-part-Number' type='number'/>
-              <SouthIcon/>
-            </div>
+              </Col>
+              <Col className='report-summary-data-part-Number'>
+                5
+              </Col>
+              <Col></Col>
+              <Col></Col>
+              <Col className='report-summary-data-part-days'>
+              Quality
+              </Col>
+              
+              <Col>
+              <SouthIcon className='report-summary-lower-arrow'/>
+              </Col>
+              
+              
+            </Row>
 
-            <div className='report-summary-data-part-1st-row'>
-              <div className='report-summary-data-part-literature'>
+            <Row className='report-summary-data-part-1st-row'>
+              <Col className='report-summary-data-part-literature'>
                 Org. Time(Hours)
-              </div>
-              <input className='report-summary-data-part-Number' type='number'/>
-              <NorthIcon/>
-            </div>
+              </Col>
+              <Col></Col>
+              <Col className='report-summary-data-part-Number'>
+                4
+              </Col>
+              <Col></Col>
+              <Col></Col>
+              <Col></Col>
+              <Col></Col>
+              <Col></Col>
+              <Col></Col>
+              <Col className='report-summary-data-part-days'>Quality</Col>
+              <Col>
+              <NorthIcon className='report-summary-upper-arrow'/>
+              </Col>
+              
+              
+            </Row>
 
-            <div className='report-summary-data-part-1st-row'>
-              <div className='report-summary-data-part-miss'>
+            <Row className='report-summary-data-part-1st-row'>
+              <Col className='report-summary-data-part-miss'>
                 Miscellaneous
-              </div>
+              </Col>
+              
 
-              <div className='report-summary-data-part-miss-1st-column'>
-                <div className='report-summary-data-part-miss-1st-column-1st-row'>
-                  <div1>Self Analysis</div1>
-                  <input></input>
-                  <SouthIcon/>
-                </div>
-                <div className='report-summary-data-part-miss-1st-column-2nd-row'>
-                  <div1>Social Work</div1>
-                  <input></input>
-                  <NorthIcon/>
-                </div>
-                <div className='report-summary-data-part-miss-1st-column-3rd-row'>
-                  <div1>Giving Loan</div1>
-                  <input></input>
-                  <SouthIcon/>
-                </div>
-              </div>
+              <Col className='report-summary-data-part-miss-1st-column'>
+                <Row className='report-summary-data-part-miss-1st-column-1st-row'>
+                  
+                  <Col>Self Analysis</Col>
+                  <Col className='report-summary-data-part-Number'>30</Col>
+                  <Col>
+                  <SouthIcon className='report-summary-lower-arrow'/>
+                  </Col>
+                  
+                </Row>
+                <Row className='report-summary-data-part-miss-1st-column-2nd-row'>
+                  <Col>Social Work</Col>
+                  <Col className='report-summary-data-part-Number'>20</Col>
+                  <Col>
+                  <NorthIcon className='report-summary-upper-arrow'/>
+                  </Col>
+                  
+                </Row>
+                <Row className='report-summary-data-part-miss-1st-column-3rd-row'>
+                  <Col>Giving Loan</Col>
+                  <Col className='report-summary-data-part-Number'>2</Col>
+                  <Col>
+                  <SouthIcon className='report-summary-lower-arrow'/>
+                  </Col>
+                  
+                </Row>
+              </Col>
+              
 
-              <div className='report-summary-data-part-miss-2nd-column'>
-                <div className='report-summary-data-part-miss-2nd-column-1st-row'>
-                  <div1>Family Meeting</div1>
-                  <input></input>
-                  <SouthIcon/>
-                </div>
-                <div className='report-summary-data-part-miss-2nd-column-2nd-row'>
-                  <div1>Visit</div1>
-                  <input></input>
-                  <NorthIcon/>
-                </div>
-                <div className='report-summary-data-part-miss-2nd-column-3rd-row'>
-                  <div1>Report(Days)</div1>
-                  <input></input>
-                  <SouthIcon/>
-                </div>
-              </div>
+              <Col className='report-summary-data-part-miss-2nd-column'>
+                <Row className='report-summary-data-part-miss-2nd-column-1st-row'>
+                  <Col>Family Meeting</Col>
+                  <Col className='report-summary-data-part-Number'>5</Col>
+                  <Col>
+                  <SouthIcon className='report-summary-lower-arrow'/>
+                  </Col>
+                  
+                </Row>
+                <Row className='report-summary-data-part-miss-2nd-column-2nd-row'>
+                  <Col>Visit</Col>
+                  <Col className='report-summary-data-part-Number'>5</Col>
+                  <Col>
+                  <NorthIcon className='report-summary-upper-arrow'/>
+                  </Col>
+                  
+                </Row>
+                <Row className='report-summary-data-part-miss-2nd-column-3rd-row'>
+                  <Col>Report</Col>
+                  <Col className='report-summary-data-part-Number'>30</Col>
+                  <Col>
+                  <SouthIcon className='report-summary-lower-arrow'/>
+                  </Col>
+                  
+                </Row>
+              </Col>
+              <Col></Col>
 
-            </div>
+            </Row>
 
             <div className='report-summary-data-part-comment'>
               <div1>Comment</div1>
@@ -225,7 +370,7 @@ const ReportSummary = () => {
                 </div>
             </div>
 
-          </div>
+          </Container>
 
           
           

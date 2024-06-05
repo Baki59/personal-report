@@ -6,6 +6,7 @@ import 'react-dropdown/style.css';
 import './monthlyplan.css'
 import DownloadForOfflineIcon from '@mui/icons-material/DownloadForOffline';
 import ShareIcon from '@mui/icons-material/Share';
+import { Col, Container, Row } from 'react-bootstrap';
 
 const MonthlyPlan = () => {
   const Year = [
@@ -27,164 +28,235 @@ const MonthlyPlan = () => {
               <input type='number'/>
           </div>
 
-          <div className='monthly-plan-data-part'>
-            <div className='monthly-plan-data-part-1st-row'>
-              <div className='monthly-plan-data-part-topic'>
+          <Container className='monthly-plan-data-part'>
+            <Row className='monthly-plan-data-part-1st-row'>
+              <Col className='monthly-plan-data-part-topic'>
                 Quran Study(Ayahs)
-              </div>
-              <div className='monthly-plan-data-part-days'>
+              </Col>
+              <Col className='monthly-plan-data-part-days'>
                 Days
-              </div>
-              <input className='monthly-plan-data-part-Number' type='number'/>
-              <div className='monthly-plan-data-part-days'>
+              </Col>
+              <Col  >
+              <input type='number'/>
+              </Col>
+              
+              <Col className='monthly-plan-data-part-days'>
                 Study(Ayahs)
-              </div>
-              <input className='monthly-plan-data-part-Number' type='number'/>
-              <div className='monthly-plan-data-part-days'>
+              </Col>
+              <Col >
+              <input type='number'/>
+              </Col>
+              
+              <Col className='monthly-plan-data-part-days'>
                 Memorization
-              </div>
-              <input className='monthly-plan-data-part-Number' type='number'/>
-              <div className='monthly-plan-data-part-days'>
+              </Col>
+              <Col >
+              <input  type='number'/>
+              </Col>
+              
+              <Col className='monthly-plan-data-part-days'>
                 Dars
-              </div>
-              <input className='monthly-plan-data-part-Number' type='number'/>
-            </div>
+              </Col>
+              <Col >
+              <input  type='number'/>
+              </Col>
+              
+            </Row>
 
-            <div className='monthly-plan-data-part-1st-row'>
-              <div className='monthly-plan-data-part-topic'>
+            <Row className='monthly-plan-data-part-1st-row'>
+              <Col className='monthly-plan-data-part-topic'>
                 Hadith(Numbers)
-              </div>
-              <div className='monthly-plan-data-part-days'>
+              </Col>
+              <Col className='monthly-plan-data-part-days'>
                 Days
-              </div>
-              <input className='monthly-plan-data-part-Number' type='number'/>
-              <div className='monthly-plan-data-part-days'>
+              </Col>
+              <Col  >
+              <input type='number'/>
+              </Col>
+              
+              <Col className='monthly-plan-data-part-days'>
                 Study(Ayahs)
-              </div>
-              <input className='monthly-plan-data-part-Number' type='number'/>
-              <div className='monthly-plan-data-part-days'>
+              </Col>
+              <Col   >
+              <input type='number'/>
+              </Col>
+              
+              <Col className='monthly-plan-data-part-days'>
                 Memorization
-              </div>
-              <input className='monthly-plan-data-part-Number' type='number'/>
-              <div className='monthly-plan-data-part-days'>
+              </Col>
+              <Col  >
+              <input type='number'/>
+              </Col>
+              
+              <Col className='monthly-plan-data-part-days'>
                 Dars
-              </div>
-              <input className='monthly-plan-data-part-Number' type='number'/>
-            </div>
+              </Col>
+              <Col >
+              <input  type='number'/>
+              </Col>
+              
+            </Row>
 
-            <div className='monthly-plan-data-part-1st-row'>
-              <div className='monthly-plan-data-part-literature'>
+            <Row className='monthly-plan-data-part-1st-row'>
+              <Col className='monthly-plan-data-part-literature'>
                 Literature Study(Pages)
-              </div>
-              <div className='monthly-plan-data-part-days'>
+              </Col>
+              <Col className='monthly-plan-data-part-days'>
                 Islamic
-              </div>
-              <input className='monthly-plan-data-part-Number' type='number'/>
-              <div className='monthly-plan-data-part-days'>
+              </Col>
+              <Col >
+              <input  type='number'/>
+              </Col>
+              
+              <Col className='monthly-plan-data-part-days'>
                 Others
-              </div>
-              <input className='monthly-plan-data-part-Number' type='number'/>
-            </div>
-            <div className='monthly-plan-data-part-1st-row'>
-              <div className='monthly-plan-data-part-literature'>
+              </Col>
+              <Col >
+              <input  type='number'/>
+              </Col>
+              
+            </Row>
+
+            <Row className='monthly-plan-data-part-1st-row'>
+              <Col className='monthly-plan-data-part-literature'>
                 Namaz(Waqt)
-              </div>
-              <div className='monthly-plan-data-part-days'>
+              </Col>
+              <Col className='monthly-plan-data-part-days'>
                 Jamaa'h
-              </div>
-              <input className='monthly-plan-data-part-Number' type='number'/>
-              <div className='monthly-plan-data-part-days'>
+              </Col>
+              <Col >
+              <input  type='number'/>
+              </Col>
+              
+              <Col className='monthly-plan-data-part-days'>
                 Qadha
-              </div>
-              <input className='monthly-plan-data-part-Number' type='number'/>
-            </div>
-            <div className='monthly-plan-data-part-1st-row'>
-              <div className='monthly-plan-data-part-literature'>
+              </Col>
+              <Col   >
+              <input type='number'/>
+              </Col>
+              
+            </Row>
+
+            <Row className='monthly-plan-data-part-1st-row'>
+              <Col className='monthly-plan-data-part-literature'>
                 Contact(Number)
-              </div>
-              <div className='monthly-plan-data-part-days'>
+              </Col>
+              <Col className='monthly-plan-data-part-days'>
                 Workers
-              </div>
-              <input className='monthly-plan-data-part-Number' type='number'/>
-              <div className='monthly-plan-data-part-days'>
+              </Col>
+              <Col >
+              <input  type='number'/>
+              </Col>
+              
+              <Col className='monthly-plan-data-part-days'>
                 Ruqon
-              </div>
-              <input className='monthly-plan-data-part-Number' type='number'/>
-            </div>
-            <div className='monthly-plan-data-part-1st-row'>
-              <div className='monthly-plan-data-part-literature'>
+              </Col>
+              <Col >
+              <input type='number'/>
+              </Col>
+              
+            </Row>
+
+            <Row className='monthly-plan-data-part-1st-row'>
+              <Col className='monthly-plan-data-part-literature'>
                 Distribution(Number)
-              </div>
-              <div className='monthly-plan-data-part-days'>
+              </Col>
+              <Col className='monthly-plan-data-part-days'>
                 Islamic Book
-              </div>
-              <input className='monthly-plan-data-part-Number' type='number'/>
-              <div className='monthly-plan-data-part-days'>
+              </Col>
+              <Col >
+              <input type='number'/>
+              </Col>
+              
+              <Col className='monthly-plan-data-part-days'>
                 Others
-              </div>
-              <input className='monthly-plan-data-part-Number' type='number'/>
-            </div>
-            <div className='monthly-plan-data-part-1st-row'>
-              <div className='monthly-plan-data-part-literature'>
+              </Col>
+              <Col  >
+              <input type='number'/>
+              </Col>
+              
+            </Row>
+
+            <Row className='monthly-plan-data-part-1st-row'>
+              <Col className='monthly-plan-data-part-literature'>
                 Meet Up(Number)
-              </div>
-              <div className='monthly-plan-data-part-days'>
+              </Col>
+              <Col className='monthly-plan-data-part-days'>
                 Dawah Targeted
-              </div>
-              <input className='monthly-plan-data-part-Number' type='number'/>
-              <div className='monthly-plan-data-part-days'>
+              </Col>
+              <Col >
+              <input  type='number'/>
+              </Col>
+              
+              <Col className='monthly-plan-data-part-days'>
                 Workers
-              </div>
-              <input className='monthly-plan-data-part-Number' type='number'/>
-              <div className='monthly-plan-data-part-days'>
+              </Col>
+              <Col >
+              <input  type='number'/>
+              </Col>
+              
+              <Col className='monthly-plan-data-part-days'>
                 Ruqon
-              </div>
-              <input className='monthly-plan-data-part-Number' type='number'/>
-            </div>
+              </Col>
+              <Col>
+              <input  type='number'/>
+              </Col>
+              
+            </Row>
 
-            <div className='monthly-plan-data-part-1st-row'>
-              <div className='monthly-plan-data-part-literature'>
+            <Row className='monthly-plan-data-part-1st-row'>
+              <Col className='monthly-plan-data-part-literature'>
                 Org. Time(Hours)
-              </div>
-              <input className='monthly-plan-data-part-Number' type='number'/>
-            </div>
+              </Col>
+              <Col >
+              <input  type='number'/>
+              </Col>
+              <Col></Col>
+              <Col></Col>
+              <Col></Col>
+              
+            </Row>
 
-            <div className='monthly-plan-data-part-1st-row'>
-              <div className='monthly-plan-data-part-miss'>
+            <Row className='monthly-plan-data-part-1st-row'>
+              <Col className='monthly-plan-data-part-miss'>
                 Miscellaneous
-              </div>
+              </Col>
 
-              <div className='monthly-plan-data-part-miss-1st-column'>
-                <div className='monthly-plan-data-part-miss-1st-column-1st-row'>
-                  <div1>Self Analysis</div1>
-                  <input></input>
-                </div>
-                <div className='monthly-plan-data-part-miss-1st-column-2nd-row'>
-                  <div1>Social Work</div1>
-                  <input></input>
-                </div>
-                <div className='monthly-plan-data-part-miss-1st-column-3rd-row'>
-                  <div1>Giving Loan</div1>
-                  <input></input>
-                </div>
-              </div>
+              <Col className='monthly-plan-data-part-miss-1st-column'>
+                <Row className='monthly-plan-data-part-miss-1st-column-1st-row'>
+                  <Col>Self Analysis</Col>
+                  <Col>
+                  <input type='number'/>
+                  </Col>
+                </Row>
+                <Row className='monthly-plan-data-part-miss-1st-column-2nd-row'>
+                  <Col>Social Work</Col>
+                  <Col><input type='number'/></Col>
+                </Row>
+                <Row className='monthly-plan-data-part-miss-1st-column-3rd-row'>
+                  <Col>Giving Loan</Col>
+                  <Col>
+                  <input type='number'/>
+                  </Col>
+                </Row>
+              </Col>
 
-              <div className='monthly-plan-data-part-miss-2nd-column'>
-                <div className='monthly-plan-data-part-miss-2nd-column-1st-row'>
-                  <div1>Family Meeting</div1>
-                  <input></input>
-                </div>
-                <div className='monthly-plan-data-part-miss-2nd-column-2nd-row'>
-                  <div1>Visit</div1>
-                  <input></input>
-                </div>
-                <div className='monthly-plan-data-part-miss-2nd-column-3rd-row'>
-                  <div1>Report(Days)</div1>
-                  <input></input>
-                </div>
-              </div>
+              <Col className='monthly-plan-data-part-miss-2nd-column'>
+                <Row className='monthly-plan-data-part-miss-2nd-column-1st-row'>
+                  <Col>Family Meeting</Col>
+                  <Col><input type='number'/></Col>
+                </Row>
+                <Row className='monthly-plan-data-part-miss-2nd-column-2nd-row'>
+                  <Col>Visit</Col>
+                  <Col><input type='number'/></Col>
+                </Row>
+                <Row className='monthly-plan-data-part-miss-2nd-column-3rd-row'>
+                  <Col>Report(Days)</Col>
+                  <Col><input type='number'/></Col>
+                </Row>
+              </Col>
 
-            </div>
+            </Row>
 
             <div className='monthly-plan-data-part-comment'>
               <div1>Comment</div1>
@@ -204,7 +276,7 @@ const MonthlyPlan = () => {
                 </div>
             </div>
 
-          </div>
+          </Container>
 
           
           
