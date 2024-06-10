@@ -17,12 +17,19 @@
 }
 .monthly-plan-middle-part-1st-row div2{
     gap: 10px;
+    
+}
+.monthly-plan-middle-part-1st-row div1{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
 }
 .monthly-plan-middle-part-1st-row input{
     width: 50px;
     border-width: 1px;
     text-align: center;
     padding: 5px;
+    color: black;
 }
 .monthly-plan-data-part{
     margin-top: 30px;
@@ -39,7 +46,7 @@
     font-weight: 500;
     //padding: 10px;
     text-align: center;
-    justify-content: center;
+    align-content: center;
 }
 .monthly-plan-data-part-literature{
     //width: 25%;
@@ -54,19 +61,20 @@
 .monthly-plan-data-part-days{
     color: white;
     //margin-right: 10px;
-    text-align: center;
+    text-align: right;
     padding: 10px;
     //align-items: flex-end;
+    
 
 }
-.monthly-plan-data-part-Number{
-    //width: 50px;
+.monthly-plan-data-part-number{
+    width: 70px;
     border-width: 1px;
-    color: white;
-    text-align: center;
-    padding: 10px;
+    //text-align: center;
+    align-content: center;
+    //padding: 10px;
     margin-right: 20px;
-    align-items: flex-start;
+    //align-items: flex-start;
 }
 .monthly-plan-data-part-miss{
     width: 25%;
@@ -221,16 +229,34 @@
 
 @media screen and (max-width: 450px){
     .monthly-plan-middle-part-1st-row{
-        margin-left: 5%;
+        margin-left: 15%;
+        gap: 5px;
+    }
+    .monthly-plan-middle-part-1st-row div1{
+        display: flex;
+        flex-direction: column;
         gap: 5px;
     }
     .monthly-plan-change-saved{
         width: 30%;
     }
+    .monthly-plan-data-part-number{
+        width: 100px;
+    }
 }
 @media screen and (max-width: 350px){
     .monthly-plan-middle-part-1st-row{
-        font-size: 10px;
+        font-size: 15px;
+        margin-left: 10%;
     }
+    .monthly-plan-data-part-number{
+        width: 100px;
+    }
+    .monthly-plan-middle-part-add-new{
+        width: 60%;
+        
+    }
+    
+    
 }
 

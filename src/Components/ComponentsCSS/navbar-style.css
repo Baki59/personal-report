@@ -74,6 +74,27 @@ button:hover{
   color:  white;
   z-index: 99;
 }
+.navbar-profile-menu-list{
+  position: absolute;
+  background-color: #24BA84;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  //gap: 10px;
+  height: auto;
+  top: 80px;
+  align-items: center;
+  transform: translateX(1360px);
+  text-align: center;
+}
+.navbar-profile-menu-list li{
+  width: 150px;
+  height: 30px;
+  color: white;
+  cursor: pointer;
+  border-width: 0.5px;
+  border-color: grey;
+}
 .navbar-logo-and-title{
   position: relative;
   left: 5%;
@@ -118,6 +139,7 @@ button:hover{
   .navbar-title{
     font-size: 20px;
   }
+  
 }
 
   @media screen and (max-width: 950px){
@@ -214,12 +236,17 @@ button:hover{
     .navbar-profile-icon-mobile{
         display: block;
     }
+    .navbar-profile-menu-list{
+      transform: translateX(670px);
+    }
     
   }
 
-  @media screen and (max-width: 960px){
+  @media screen and (max-width: 850px){
     
-    
+    .navbar-profile-menu-list{
+      transform: translateX(680px);
+    }
     
   }
   @media screen and (max-width: 576px){
@@ -234,7 +261,27 @@ button:hover{
       height: 50px;
       font-size: 1.1rem;
       font-weight: 400;
-
+    }
+    .navbar-profile-menu-list{
+      transform: translateX(260px);
+    }
+    
   }
+  @media screen and (max-width: 380px){
+    .nav-links{
+      font-size: 1rem;
+      font-weight: 600;
+      padding: 0.5rem 0.7rem;
+    }
+    .nav-links-mobile{
+      padding: 0.8rem;
+      width: 200px;
+      height: 50px;
+      font-size: 1.1rem;
+      font-weight: 400;
+    }
+    .navbar-profile-menu-list{
+      transform: translateX(170px);
+    }
     
   }

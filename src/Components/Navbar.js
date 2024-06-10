@@ -4,8 +4,8 @@ import { NavbarItems } from "./NavbarItems";
 import { RiMenuFold4Fill } from "react-icons/ri";
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { Menu, MenuButton, MenuItem, MenuItems, Transition } from '@headlessui/react'
-import Signup from "../Routes/Signup";
+import { Menu, MenuItem } from "@mui/material";
+
 // import {
 //     ArchiveBoxXMarkIcon,
 //     ChevronDownIcon,
@@ -17,6 +17,18 @@ import Signup from "../Routes/Signup";
 
 const Navbar = () => {
     const [state, setState] = useState(false);
+
+    //---------------------For Profile Menu------------------
+    const [openMenu, setOpenMenu] = useState(false);
+    const handleClickMenu = () => {
+        setOpenMenu(!openMenu);
+    };
+    const handleClose = () => {
+        setOpenMenu(false);
+    };
+
+    //----------------------For Profile Menu-------------------------
+   
     const handleClick = () =>{
         setState(!state)
     }
@@ -61,52 +73,54 @@ const Navbar = () => {
                     <i className="fas fa-bars"></i>
                 </div> */}
 
-                <div className="navbar-profile-icons">
-                    <Menu>
-                        <MenuButton className="inline-flex items-center gap-2 rounded-md bg-gray-800 py-1.5 px-3 text-sm/6 font-semibold text-white shadow-inner shadow-white/10 focus:outline-none data-[hover]:bg-gray-700 data-[open]:bg-gray-700 data-[focus]:outline-1 data-[focus]:outline-white">
-                        <i className="fas fa-bars"/>
-                        </MenuButton>
-                        <Transition
-                        enter="transition ease-out duration-75"
-                        enterFrom="opacity-0 scale-95"
-                        enterTo="opacity-100 scale-100"
-                        leave="transition ease-in duration-100"
-                        leaveFrom="opacity-100 scale-100"
-                        leaveTo="opacity-0 scale-95"
-                        >
-                        <MenuItems
-                            anchor="bottom end"
-                            className="w-52 origin-top-right rounded-xl border border-white/5 bg-white/5 p-1 text-sm/6 text-white [--anchor-gap:var(--spacing-1)] focus:outline-none"
-                        >
-                            <MenuItem>
-                            <button className="group flex w-full items-center gap-2 rounded-lg py-1.5 px-3 data-[focus]:bg-white/10">
-                                Edit
-                                <kbd className="ml-auto hidden font-sans text-xs text-white/50 group-data-[focus]:inline">⌘E</kbd>
-                            </button>
-                            </MenuItem>
-                            <MenuItem>
-                            <button className="group flex w-full items-center gap-2 rounded-lg py-1.5 px-3 data-[focus]:bg-white/10">
-                                Duplicate
-                                <kbd className="ml-auto hidden font-sans text-xs text-white/50 group-data-[focus]:inline">⌘D</kbd>
-                            </button>
-                            </MenuItem>
-                            <div className="my-1 h-px bg-white/5" />
-                            <MenuItem>
-                            <button className="group flex w-full items-center gap-2 rounded-lg py-1.5 px-3 data-[focus]:bg-white/10">
-                                Archive
-                                <kbd className="ml-auto hidden font-sans text-xs text-white/50 group-data-[focus]:inline">⌘A</kbd>
-                            </button>
-                            </MenuItem>
-                            <MenuItem>
-                            <button className="group flex w-full items-center gap-2 rounded-lg py-1.5 px-3 data-[focus]:bg-white/10">
-                                Delete
-                                <kbd className="ml-auto hidden font-sans text-xs text-white/50 group-data-[focus]:inline">⌘D</kbd>
-                            </button>
-                            </MenuItem>
-                        </MenuItems>
-                        </Transition>
-                    </Menu>
-                    </div>
+                <div className="navbar-profile-icons"
+                onClick={handleClickMenu}>
+                <i className="fas fa-bars"/>
+                </div>
+                
+                {openMenu &&
+                
+                <ul
+                onClose={handleClose}
+                className="navbar-profile-menu-list"
+                >
+                    <li onClick={handleClose}>
+                        Account
+                    </li>
+                    <li onClick={handleClose}>
+                        Invite Mentor
+                    </li>
+                    <li onClick={handleClose}>
+                        Settings
+                    </li>
+                    <li onClick={handleClose}>
+                        Theme
+                    </li>
+                    <li onClick={handleClose}>
+                        Language
+                    </li>
+                    <li onClick={handleClose}>
+                        Notes
+                    </li>
+                    <li onClick={handleClose}>
+                        Help
+                    </li>
+                    <li onClick={handleClose}>
+                        Report a Bug
+                    </li>
+                    <li onClick={handleClose}>
+                        Download App
+                    </li>
+                    <li onClick={handleClose}>
+                        Logout
+                    </li>
+                </ul>
+                }
+                
+
+                
+
+                
 
             {/* Menu Part */}
 

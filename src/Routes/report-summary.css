@@ -43,7 +43,7 @@
     font-weight: 500;
     //padding: 10px;
     text-align: center;
-    justify-content: center;
+    align-content: center;
 }
 .report-summary-data-part-literature{
     //width: 15%;
@@ -53,7 +53,7 @@
     font-weight: 500;
     //padding: 10px;
     text-align: center;
-    justify-content: center;
+    align-content: center;
 }
 .report-summary-data-part-days{
     color: white;
@@ -194,6 +194,9 @@
     background-color: #D9D9D9;
     color: green;
     align-self: center;
+    align-content: center;
+    text-align: center;
+    //font-weight: bold;
 }
 .report-summary-lower-arrow{
     width: 54px;
@@ -201,6 +204,8 @@
     background-color: #D9D9D9;
     color: red;
     align-self: center;
+    align-content: center;
+    text-align: center;
 }
 
 @media screen and (max-width: 1050px){
@@ -245,6 +250,10 @@
     }
     .report-summary-change-saved{
         width: 30%;
+    }
+    .report-summary-data-part-miss{
+        //width: 25%;
+        height: 63px;
     }
 }
 @media screen and (max-width: 350px){

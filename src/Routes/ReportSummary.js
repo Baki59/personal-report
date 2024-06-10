@@ -8,7 +8,8 @@ import DownloadForOfflineIcon from '@mui/icons-material/DownloadForOffline';
 import ShareIcon from '@mui/icons-material/Share';
 import NorthIcon from '@mui/icons-material/North';
 import SouthIcon from '@mui/icons-material/South';
-import { Col, Container, Row } from 'react-bootstrap';
+// import { Col, Container, Row } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-grid-system';
 
 const ReportSummary = () => {
   const Year = [
@@ -32,268 +33,294 @@ const ReportSummary = () => {
 
           <Container className='report-summary-data-part'>
             <Row className='report-summary-data-part-1st-row'>
-              <Col className='report-summary-data-part-topic'>
+              <Col xs xl md lg={2} sm className='report-summary-data-part-topic'>
                 Quran Study(Ayahs)
               </Col>
-              <Col className='report-summary-data-part-days'>
+              <Col xs={4} xl md lg={1.5} sm className='report-summary-data-part-days'>
                 Days
               </Col>
-              <Col className='report-summary-data-part-Number'>
+              <Col xs={4} xl md lg={1} sm className='report-summary-data-part-Number'>
                 25
               </Col>
               
-              <Col className='report-summary-data-part-days'>
+              <Col xs={4} xl md lg={1.5} sm  className='report-summary-data-part-days'>
                 Study(Ayahs)
               </Col>
-              <Col className='report-summary-data-part-Number'>
+              <Col xs={4} xl md lg={1} sm className='report-summary-data-part-Number'>
                 500
               </Col>
               
-              <Col className='report-summary-data-part-days'>
+              <Col xs={4} xl md lg={1.5} sm  className='report-summary-data-part-days'>
                 Memorization 
               </Col>
-              <Col className='report-summary-data-part-Number'>
+              <Col xs={4} xl md lg={0.5} sm className='report-summary-data-part-Number'>
                 10
               </Col>
               
-              <Col className='report-summary-data-part-days'>
+              <Col xs={4} xl md lg={1} sm className='report-summary-data-part-days'>
                 Dars
               </Col>
-              <Col  className='report-summary-data-part-Number' >
+              <Col xs={4} xl md lg={0.5} sm className='report-summary-data-part-Number' >
                 10
               </Col>
-              <Col className='report-summary-data-part-days'>
+              <Col xs={4} xl md lg={1} sm className='report-summary-data-part-days'>
               Quality
               </Col>
-              <Col >
-                <NorthIcon className='report-summary-upper-arrow'/>
+              <Col xs={4} xl md lg={0.5} sm className='report-summary-upper-arrow'>
+                <NorthIcon />
               </Col>
               
             </Row>
 
             <Row className='report-summary-data-part-1st-row'>
-              <Col className='report-summary-data-part-topic'>
+              <Col xs xl md lg={2} sm className='report-summary-data-part-topic'>
                 Hadith (Numbers)
               </Col>
-              <Col className='report-summary-data-part-days'>
+              <Col xs={4} xl md lg={1.5} sm className='report-summary-data-part-days'>
                 Days
               </Col>
-              <Col className='report-summary-data-part-Number'>
+              <Col xs={4} xl md lg={1} sm className='report-summary-data-part-Number'>
               30
               </Col>
               
-              <Col className='report-summary-data-part-days'>
+              <Col xs={4} xl md lg={1.5} sm className='report-summary-data-part-days'>
                 Study(Nums)
               </Col>
 
-              <Col className='report-summary-data-part-Number'>
+              <Col xs={4} xl md lg={1} sm className='report-summary-data-part-Number'>
               300
               </Col>
               
-              <Col className='report-summary-data-part-days'>
+              <Col xs={4} xl md lg={1.5} sm className='report-summary-data-part-days'>
                 Memorization
               </Col>
-              <Col className='report-summary-data-part-Number'>
+              <Col xs={4} xl md lg={0.5} sm className='report-summary-data-part-Number'>
               10
               </Col>
               
-              <Col className='report-summary-data-part-days'>
+              <Col xs={4} xl md lg={1} sm className='report-summary-data-part-days'>
                 Dars
               </Col>
-              <Col className='report-summary-data-part-Number'>
+              <Col xs={4} xl md lg={0.5} sm className='report-summary-data-part-Number'>
               10
               </Col>
               
-              <Col className='report-summary-data-part-days'>
+              <Col xs={4} xl md lg={1} sm className='report-summary-data-part-days'>
               Quality
               </Col>
-              <Col  >
-                <SouthIcon className='report-summary-lower-arrow'/>
+              <Col xs={4} xl md lg={0.5} sm className='report-summary-lower-arrow'>
+                <SouthIcon />
               </Col>
               
             </Row>
 
             <Row className='report-summary-data-part-1st-row'>
-              <Col className='report-summary-data-part-literature'>
+              <Col xs xl md lg={2} sm className='report-summary-data-part-literature'>
                 Literature Study(Pages)
               </Col>
-              <Col className='report-summary-data-part-days'>
+              <Col xs={4} xl md lg={1.45} sm className='report-summary-data-part-days'>
                 Islamic
               </Col>'
-              <Col className='report-summary-data-part-Number'>
+              <Col xs={4} xl md lg={1} sm className='report-summary-data-part-Number'>
               1000
               </Col>
               
-              <Col className='report-summary-data-part-days'>
+              <Col xs={4} xl md lg={1.5} sm className='report-summary-data-part-days'>
                 Others
               </Col>
-              <Col className='report-summary-data-part-Number'>
+              <Col xs={4} xl md lg={1} sm className='report-summary-data-part-Number'>
                 500
               </Col>
-              <Col></Col>
-              <Col></Col>
-              <Col></Col>
-              <Col></Col>
-              <Col className='report-summary-data-part-days'>
+              <Col xs={4} xl md lg={1} sm></Col>
+              <Col xs={2} xl md lg={1} sm></Col>
+              <Col xs={3} xl md lg={1} sm></Col>
+              <Col xs={3} xl md lg={0.5} sm></Col>
+
+              <Col xs={4} xl md lg={1} sm className='report-summary-data-part-days'>
               Quality
               </Col>
-              <Col>
-              <NorthIcon className='report-summary-upper-arrow'/>
+              <Col xs={4} xl md lg={0.5} sm className='report-summary-upper-arrow'>
+              <NorthIcon />
               </Col>
               
             </Row>
 
             <Row className='report-summary-data-part-1st-row'>
-              <Col className='report-summary-data-part-literature'>
+              
+            <Col xs xl md lg={2} sm className='report-summary-data-part-literature'>
                 Namaz(Waqt)
               </Col>
-              <Col className='report-summary-data-part-days'>
+              <Col xs={4} xl md lg={1.45} sm className='report-summary-data-part-days'>
                 Jamaa'h
+              </Col>'
+              <Col xs={4} xl md lg={1} sm className='report-summary-data-part-Number'>
+              150
               </Col>
-              <Col className='report-summary-data-part-Number'>
-                150
-              </Col>
-              <Col className='report-summary-data-part-days'>
+              
+              <Col xs={4} xl md lg={1.5} sm className='report-summary-data-part-days'>
                 Qadha
               </Col>
-              <Col className='report-summary-data-part-Number' >
+              <Col xs={4} xl md lg={1} sm className='report-summary-data-part-Number'>
                 2
               </Col>
-              <Col></Col>
-              <Col></Col>
-              <Col></Col>
-              <Col></Col>
-              <Col className='report-summary-data-part-days'>
+              <Col xs={4} xl md lg={1} sm></Col>
+              <Col xs={4} xl md lg={1} sm></Col>
+              <Col xs={2} xl md lg={1} sm></Col>
+              <Col xs={2} xl md lg={0.5} sm></Col>
+
+              <Col xs={4} xl md lg={1} sm className='report-summary-data-part-days'>
               Quality
               </Col>
-              <Col>
-              <SouthIcon className='report-summary-lower-arrow'/>
+              <Col xs={4} xl md lg={0.5} sm className='report-summary-upper-arrow'>
+              <NorthIcon />
               </Col>
-              
+
             </Row>
 
             <Row className='report-summary-data-part-1st-row'>
-              <Col className='report-summary-data-part-literature'>
+
+              <Col xs xl md lg={2} sm className='report-summary-data-part-literature'>
                 Contact (Number)
               </Col>
-              <Col className='report-summary-data-part-days'>
+              <Col xs={4} xl md lg={1.45} sm className='report-summary-data-part-days'>
                 Workers
+              </Col>'
+              <Col xs={4} xl md lg={1} sm className='report-summary-data-part-Number'>
+              1000
               </Col>
-              <Col className='report-summary-data-part-Number'>
-                5
-              </Col>
-              <Col className='report-summary-data-part-days'>
+              
+              <Col xs={4} xl md lg={1.5} sm className='report-summary-data-part-days'>
                 Ruqon
               </Col>
-              <Col className='report-summary-data-part-Number'>
-                5
+              <Col xs={4} xl md lg={1} sm className='report-summary-data-part-Number'>
+                500
               </Col>
-              <Col></Col>
-              <Col></Col>
-              <Col></Col>
-              <Col></Col>
-              <Col className='report-summary-data-part-days'>
+              <Col xs={4} xl md lg={1} sm></Col>
+              <Col xs={4} xl md lg={1} sm></Col>
+              <Col xs={2} xl md lg={1} sm></Col>
+              <Col xs={2} xl md lg={0.5} sm></Col>
+
+              <Col xs={4} xl md lg={1} sm className='report-summary-data-part-days'>
               Quality
               </Col>
-              <Col>
-              <NorthIcon className='report-summary-upper-arrow'/>
+              <Col xs={4} xl md lg={0.5} sm className='report-summary-lower-arrow'>
+              <SouthIcon />
               </Col>
+
               
             </Row>
 
             <Row className='report-summary-data-part-1st-row'>
-              <Col className='report-summary-data-part-literature'>
-                Distribution (Number)
+
+              <Col xs xl md lg={2} sm className='report-summary-data-part-literature'>
+                Distribution(Number)
               </Col>
-              <Col className='report-summary-data-part-days'>
-                Islamic Book
+              <Col xs={4} xl md lg={1.45} sm className='report-summary-data-part-days'>
+                Islamic Books
+              </Col>'
+              <Col xs={4} xl md lg={1} sm className='report-summary-data-part-Number'>
+              10
               </Col>
-              <Col className='report-summary-data-part-Number'>
-                10
-              </Col>
-              <Col className='report-summary-data-part-days'>
+              
+              <Col xs={4} xl md lg={1.5} sm className='report-summary-data-part-days'>
                 Others
               </Col>
-              <Col className='report-summary-data-part-Number'>
+              <Col xs={4} xl md lg={1} sm className='report-summary-data-part-Number'>
                 10
               </Col>
-              <Col></Col>
-              <Col></Col>
-              <Col></Col>
-              <Col></Col>
-              <Col className='report-summary-data-part-days'>
+              <Col xs={4} xl md lg={1} sm></Col>
+              <Col xs={4} xl md lg={1} sm></Col>
+              <Col xs={2} xl md lg={1} sm></Col>
+              <Col xs={2} xl md lg={0.5} sm></Col>
+
+              <Col xs={4} xl md lg={1} sm className='report-summary-data-part-days'>
               Quality
               </Col>
-              <Col>
-              <SouthIcon className='report-summary-lower-arrow'/>
+              <Col xs={4} xl md lg={0.5} sm className='report-summary-lower-arrow'>
+              <SouthIcon />
               </Col>
+              
               
             </Row>
 
             <Row className='report-summary-data-part-1st-row'>
-              <Col className='report-summary-data-part-literature'>
-                Meet Up(Number)
+
+              <Col xs xl md lg={2} sm className='report-summary-data-part-literature'>
+              Meet Up(Number)
               </Col>
-              <Col className='report-summary-data-part-days'>
-                Dawah Targeted
+              <Col xs={4} xl md lg={1.45} sm className='report-summary-data-part-days'>
+              Dawah Targeted
+              </Col>'
+              <Col xs={4} xl md lg={1} sm className='report-summary-data-part-Number'>
+              5
               </Col>
-              <Col className='report-summary-data-part-Number'>
-                5
-              </Col>
-              <Col className='report-summary-data-part-days'>
+              
+              <Col xs={4} xl md lg={1.5} sm className='report-summary-data-part-days'>
                 Workers
               </Col>
-              <Col className='report-summary-data-part-Number'>
-                5
+              <Col xs={4} xl md lg={1} sm className='report-summary-data-part-Number'>
+                10
               </Col>
-              <Col className='report-summary-data-part-days'>
-                Ruqon
+              <Col xs={4} xl md lg={1} sm className='report-summary-data-part-days'>
+              Ruqon
               </Col>
-              <Col className='report-summary-data-part-Number'>
-                5
+              <Col xs={4} xl md lg={1} sm className='report-summary-data-part-Number'>
+              5
               </Col>
-              <Col></Col>
-              <Col></Col>
-              <Col className='report-summary-data-part-days'>
+              <Col xs={4} xl md lg={1} sm></Col>
+              <Col xs={4} xl md lg={0.5} sm></Col>
+
+              <Col xs={4} xl md lg={1} sm className='report-summary-data-part-days'>
               Quality
               </Col>
-              
-              <Col>
-              <SouthIcon className='report-summary-lower-arrow'/>
+              <Col xs={4} xl md lg={0.5} sm className='report-summary-lower-arrow'>
+              <SouthIcon />
+              </Col>
+
+            </Row>
+
+            <Row className='report-summary-data-part-1st-row'>
+
+              <Col xs xl md lg={2} sm className='report-summary-data-part-literature'>
+              Org. Time(Hours)
+              </Col>
+              <Col xs={4} xl md lg={1.45} sm className='report-summary-data-part-days'>
+              </Col>
+              <Col xs={4} xl md lg={1} sm className='report-summary-data-part-Number'>
+              75
               </Col>
               
+              <Col xs={4} xl md lg={1.5} sm className='report-summary-data-part-days'>
+                
+              </Col>
+              <Col xs={4} xl md lg={1} sm >
+                
+              </Col>
+              <Col xs={4} xl md lg={1} sm >
+              
+              </Col>
+              <Col xs={4} xl md lg={1} sm >
+              
+              </Col>
+              <Col xs={2} xl md lg={1} sm></Col>
+              <Col xs={2} xl md lg={0.5} sm></Col>
+
+              <Col xs={4} xl md lg={1} sm className='report-summary-data-part-days'>
+              Quality
+              </Col>
+              <Col xs={4} xl md lg={0.5} sm className='report-summary-lower-arrow'>
+              <SouthIcon />
+              </Col>
               
             </Row>
 
             <Row className='report-summary-data-part-1st-row'>
-              <Col className='report-summary-data-part-literature'>
-                Org. Time(Hours)
-              </Col>
-              <Col></Col>
-              <Col className='report-summary-data-part-Number'>
-                4
-              </Col>
-              <Col></Col>
-              <Col></Col>
-              <Col></Col>
-              <Col></Col>
-              <Col></Col>
-              <Col></Col>
-              <Col className='report-summary-data-part-days'>Quality</Col>
-              <Col>
-              <NorthIcon className='report-summary-upper-arrow'/>
-              </Col>
-              
-              
-            </Row>
-
-            <Row className='report-summary-data-part-1st-row'>
-              <Col className='report-summary-data-part-miss'>
+              <Col  xs xl md lg={2} sm className='report-summary-data-part-miss'>
                 Miscellaneous
               </Col>
               
 
-              <Col className='report-summary-data-part-miss-1st-column'>
+              <Col  xs xl md lg={6} sm className='report-summary-data-part-miss-1st-column'>
                 <Row className='report-summary-data-part-miss-1st-column-1st-row'>
                   
                   <Col>Self Analysis</Col>
@@ -322,7 +349,7 @@ const ReportSummary = () => {
               </Col>
               
 
-              <Col className='report-summary-data-part-miss-2nd-column'>
+              <Col  xs xl md lg={6} sm className='report-summary-data-part-miss-2nd-column'>
                 <Row className='report-summary-data-part-miss-2nd-column-1st-row'>
                   <Col>Family Meeting</Col>
                   <Col className='report-summary-data-part-Number'>5</Col>
